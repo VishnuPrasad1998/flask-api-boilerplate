@@ -2,7 +2,7 @@
 
 git clone https://github.com/VishnuPrasad1998/flask-api-boilerplate.git flask-api-boilerplate
 
-# Create the 'my_app' virtual environment
+# Create the virtual environment
 pipenv shell
 
 # Install required Python packages
