@@ -16,6 +16,8 @@ marshmallow-sqlalchemy = "*"
 pytest = "*"
 pytest-cov = "*"
 python-dotenv = "*"
+pymysql = "*"
+cryptography = "*"
 
 [requires]
 python_version = "3.8"
