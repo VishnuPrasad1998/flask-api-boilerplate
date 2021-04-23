@@ -15,10 +15,12 @@ python manage.py init_db
 python manage.py runserver db init
 
 #Initial migration for diff dbs
+
 python manage.py runserver db init --multidb
 
 
 python manage.py runserver db migrate
+
 python manage.py runserver db upgrade
 
 # Start the Flask development web server

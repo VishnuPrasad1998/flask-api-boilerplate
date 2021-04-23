@@ -7,3 +7,4 @@ __pycache__/
 .dist
 migrations/*
 app.db
+.goutputstream-T5WO20
