@@ -1,4 +1,5 @@
 import os
+import pymysql
 from dotenv import load_dotenv
 # *****************************
 # Environment specific settings
@@ -14,7 +15,11 @@ DEBUG = True
 #     python -c "import os; print repr(os.urandom(24));"
 SECRET_KEY = os.getenv('SECRET_KEY')
 # SQLAlchemy settings
-SQLALCHEMY_DATABASE_URI = 'sqlite:///../app.db'
+
+
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://{username}:{password}@localhost/{dbname}'.format(username=os.getenv('DB_USERNAME'),
+password=os.getenv('DB_PASSWORD'),dbname=os.getenv('DB_NAME'))
+
 SQLALCHEMY_TRACK_MODIFICATIONS = os.getenv('SQLALCHEMY_TRACK_MODIFICATIONS')
 
 # Avoids a SQLAlchemy Warning
