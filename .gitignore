@@ -1,0 +1,9 @@
+instance/*
+!instance/.gitignore
+.webassets-cache
+.env
+__pycache__/
+.pytest_cache/
+.dist
+migrations/*
+app.db
