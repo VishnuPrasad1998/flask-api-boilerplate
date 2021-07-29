@@ -1,5 +1,5 @@
 # flask-api-boilerplate
-
+This is a Flask REST API boilerplate for small to medium range applications. To clone the repo please run the command below.
 git clone https://github.com/VishnuPrasad1998/flask-api-boilerplate.git flask-api-boilerplate
 
 # Create the virtual environment
